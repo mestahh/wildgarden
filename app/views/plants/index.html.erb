@@ -1,0 +1,4 @@
+<h3>Novenyek</h3>
+<% @plants.each do |plant| %>
+	<p><%= link_to plant.name, plant_path(plant) %>, <%= plant.latin_name %></p>
+<% end %>
