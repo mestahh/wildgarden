@@ -23,5 +23,15 @@ class PlantsController < ApplicationController
    plant.delete
    redirect_to plants_path
  end
+ 
+ def edit
+   @plant = Plant.find(params[:id])
+ end
+ 
+ def update
+   @plant = Plant.find(params[:id])
+   @plant.update_attributes(params[:plant])
+   redirect_to plant_path(@plant)
+ end
 
 end

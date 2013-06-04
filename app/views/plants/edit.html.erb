@@ -1,0 +1,18 @@
+<h3>Növény módosítása</h3>
+<%= form_for(@plant) do |p| %>
+<div class="field">
+	<%= p.text_field :name %>
+	<%= p.label 'Nev' %>
+</div>
+<div class="field">
+	<%= p.text_field :latin_name %>
+	<%= p.label 'Latin nev' %>
+</div>
+<div class="field">
+	<%= p.text_area :description %>
+	<%= p.label 'Leiras' %>
+</div>
+<div class="field_actions">
+	<%= p.submit 'Modositas' %>
+</div>
+<% end %>
