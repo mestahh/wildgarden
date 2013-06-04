@@ -17,5 +17,11 @@ class PlantsController < ApplicationController
    plant.save
    redirect_to plants_path
  end
+ 
+ def destroy
+   plant = Plant.find(params[:id])
+   plant.delete
+   redirect_to plants_path
+ end
 
 end
