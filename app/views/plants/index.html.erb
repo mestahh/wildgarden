@@ -1,4 +1,7 @@
 <h3>Novenyek</h3>
 <% @plants.each do |plant| %>
-	<p><%= link_to plant.name, plant_path(plant) %>, <%= plant.latin_name %> <%= link_to 'Torles', plant_path(plant), :method => 'delete' %></p>
+	<p><%= link_to plant.name, plant_path(plant) %>, <%= plant.latin_name %> 
+		<%= link_to 'Torles', plant_path(plant), :method => 'delete' %>
+		<%= link_to 'Modositas', edit_plant_path(plant) %>
+		</p>
 <% end %>

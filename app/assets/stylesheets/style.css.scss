@@ -1,0 +1,33 @@
+$background: #dfdfdf;
+$dark: #949494;
+
+$padding: 1em;
+
+body {
+  background-color: $dark;
+}
+
+#container {
+  font-family: Verdana, Arial;
+  font-size: 0.9em;
+  width: 960px;
+  background-color: $background;
+  padding: $padding;
+  
+  #navigation_menu {
+    ul {
+      list-style: none;
+      padding-left: 0px;
+      li {
+        display: inline;
+        a {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}

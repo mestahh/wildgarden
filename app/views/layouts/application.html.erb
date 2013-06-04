@@ -7,20 +7,25 @@
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
-		<div id="navigation_menu">
-			<ul>
-				<li>
-					<%= link_to 'Noveny hozzaadasa', new_plant_path %>
-				</li>
-				<li>
-					<%= link_to 'Novenyek listaja', plants_path %>
-				</li>
-			</ul>
+		<div id="container">
+			<div id="navigation_menu">
+				<ul>
+					<li>
+						<%= link_to 'Noveny hozzaadasa', new_plant_path %>
+					</li>
+					<li>
+						<%= link_to 'Novenyek listaja', plants_path %>
+					</li>
+				</ul>
+			</div>
+			<div id="main">
+				<%= yield %>
+			</div>
+			<div id="footer">
+				<p>
+					<%= link_to 'Vissza', :back %>
+				</p>
+			</div>
 		</div>
-		<%= yield %>
-
-		<p>
-			<%= link_to 'Vissza', :back %>
-		</p>
 	</body>
 </html>
